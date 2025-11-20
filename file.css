@@ -1,0 +1,132 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('unnamed.png');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    max-width: 800px;
+    margin: 40px auto;
+    border-radius: 15px;
+}
+
+
+h1 {
+    background-color: gold;
+    color: red;
+    border: 2px solid black;
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}
+
+p {
+    font-size: medium;
+    border: 2px solid powderblue;
+    padding: 20px;
+    background-color: powderblue;
+    color: black;
+    text-align: center;
+}
+
+image{
+    
+}
+
+.click-block {
+    display: block;
+    width: 250px;
+    margin: 40px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: gold;
+    color: red;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.click-block:hover {
+    transform: scale(1.05);
+    background-color: orange;
+}
+
+
+.site-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 22px;
+    width: 100%;
+}
+
+.site-footer p {
+    background-color: transparent;
+    text-align: center;
+    border: none;
+    padding: 5px;%;
+    color: white;
+    font-size: 18px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 20px;
+    }
+}
+ @media  (max-width: 500px)
+      p  {font-size: 14px;
+        padding: 15px;
+    }
+
+ @media  (max-width: 500px)
+    .click-block {
+        width: 200px;
+        padding: 10px;
+        font-size: 14px;
+    }
